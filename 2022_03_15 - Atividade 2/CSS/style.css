@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Give+You+Glory&family=Shadows+Into+Light&family=Waiting+for+the+Sunrise&family=Walter+Turncoat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Fredoka', sans-serif;
+    background-color: rgb(212, 211, 211);
+}
+.container {
+    width: 72%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #999;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    background-color: #1493dc;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+h1 {
+    background-color: #1493dc;
+    font-size: 50px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 800px;
+}
+
+.menu ul {
+    display: flex;
+    
+}
+
+.menu li {
+    margin:20px;
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #000000;
+}
+
+.texto-inicial h3 {
+    color: #1493dc;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.texto-inicial p {
+    margin-left: 20px;
+}
+
+.formulario {
+    width: 500px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.outro {
+    margin-top: 10px;
+
+    font-size: 20px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    width: 980px;
+
+}
+.campos {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin: 5px auto;
+    padding: 10px;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.campos label {
+    width: 900px;
+    margin: 5px 0;
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+}
+
+input,
+textarea {
+    width: 990px;
+    height: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+}
+.em__linha {
+    font-size: 20px;
+    font-family: 'Fredoka', sans-serif;
+    width: 1000px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.em__linha label,
+.em__linha input {
+    width: 30%;
+    margin: 0 2px;
+}
+textarea {
+    height: 150px;
+    resize: none;
+    outline: none;
+    border: 1px solid #666;
+    padding: 10px;
+}
+.botoes {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.botao {
+    padding: 5px 50px;
+    height: 50px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    background-color: #1493dc;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    color: #000000;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Traveller</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1>Traveller</h1>
+        <nav class="menu">
+            <ul> 
+                <li><a href="" >home</a></li>
+                <li><a href="">pontos turísticos</a></li>
+                <li><a href="">eventos</a></li>
+                <li><a href="">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="texto-inicial">
+        <h3>Qual foi o seu último passeio?</h3>
+        <p>Coloque aqui as informações do local, para que outras pessoas também possam conhecer.</p>
+        <p>Se não souber todos os dados, não tem problema! Faremos uma curadoria a partir dos dados que você enviar, e tão
+            logo, a sua dica de passeio será compartilhada com todos!</p>
+        <p>Agradecemos a contribuição!</p>
+        <br>
+    </section>
+
+
+    <section class="container">
+        <form class="formulario" name="dados" id="dados" action="" method="post">
+            <label for="tipo-passeio">Tipo de passeio</label>
+            <input list="tipos" id="tipo-passeio" name="tipo-passeio" required>
+                <datalist id="tipos">
+                    <option value="Auditório">  
+                    <option value="Casa e edifício histórico">
+                    <option value="Cinema">
+                    <option value="Comunidade">
+                    <option value="Estação de trem">
+                    <option value="Estádio e ginásio esportivos">
+                    <option value="Igreja e catedral">
+                    <option value="Mercado">
+                    <option value="Mirante">
+                    <option value="Mostra e galeria">
+                    <option value="Museu">
+                    <option value="Observatório">
+                    <option value="Parque e praça">
+                    <option value="Ponto e viaduto">
+                    <option value="Rua, avenida e beco">
+                    <option value="Teatro">
+                    <option value="Vilarejo e tribo">
+                    <option value="Zoológico">
+                    <option value="Outros">
+                </datalist>
+    
+            <div class="outro">
+                <label for="outro">Outro Tipo</label>
+                <input type="text" id="outro" maxlength="200" placeholder="preencha caso tenha selecionado outros">        
+            </div>
+    
+            <hr>
+
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="rua">Endereço</label>
+                    <label for="numero">Número</label>
+                    <label for="bairro">Bairro</label>
+                </div>
+                <div class="em__linha">
+                    <input type="text" id="rua" required placeholder="ex: Av. Brasil">
+                    <input type="text" id="numero" required placeholder="ex: 1000">
+                    <input type="text" id="bairro" required placeholder="ex: Centro">
+                </div>
+            </div>
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="cep">CEP</label>
+                    <label for="cidade">Cidade</label>
+                    <label for="estados">Estado</label>
+                </div>
+                <div class="em__linha">
+                    <input type="text" id="cep" required placeholder="ex: 12345-678">
+                    <input type="text" id="cidade" required placeholder="ex: São Paulo">
+                    <input list="uf" id="estados" class="lista" required placeholder="Selecione">
+                    <datalist id="uf">
+                        <option value="AC"></option>
+                        <option value="AL"></option>
+                        <option value="AP"></option>
+                        <option value="AM"></option>
+                        <option value="BA"></option>
+                        <option value="CE"></option>
+                        <option value="DF"></option>
+                        <option value="ES"></option>
+                        <option value="GO"></option>
+                        <option value="MA"></option>
+                        <option value="MT"></option>
+                        <option value="MS"></option>
+                        <option value="MG"></option>
+                        <option value="PA"></option>
+                        <option value="PB"></option>
+                        <option value="PR"></option>
+                        <option value="PE"></option>
+                        <option value="PI"></option>
+                        <option value="RJ"></option>
+                        <option value="RN"></option>
+                        <option value="RS"></option>
+                        <option value="RO"></option>
+                        <option value="RR"></option>
+                        <option value="SC"></option>
+                        <option value="SP"></option>
+                        <option value="SE"></option>
+                        <option value="TO"></option>
+                    </datalist>
+                </div>
+            </div>
+            <hr>
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="telefone">Telefone</label>
+                    <label for="hora-abertura">Horário de abertura</label>
+                    <label for="hora-fechamento">Horário de fechamento</label>
+                </div>
+                <div class="em__linha">
+                    <input type="tel" id="telefone" placeholder="ex: 00-1234-5678">
+                    <input type="time" id="hora-abertura">
+                    <input type="time" id="hora-fechamento">
+                </div>
+                <div class="em__linha">
+                    <label for="reserva">É obrigatório reservar?</label>
+                    <label for="valor">Valor da entrada</label>
+                    <label for="meia-entrada">Possui meia entrada?</label>
+                </div>
+                <div class="em__linha">    
+                    <input list="reserva-opcao" id="reserva" class="lista" placeholder="Selecione">
+                    <datalist id="reserva-opcao">obrigarório
+                        <option value="sim"></option>
+                        <option value="não"></option>
+                    </datalist>
+                    <input type="number" id="valor" placeholder="ex: 00,00">
+                    <input list="meia" id="meia-entrada" class="lista" placeholder="Selecione">
+                    <datalist id="meia">
+                        <option value="sim"></option>
+                        <option value="não"></option>
+                    </datalist>
+                </div>
+
+                <div class="em__linha">
+                    <label for="data-visita">Data de sua última visita</label>
+                </div>
+                <div class="em__linha">
+                    <input type="date" id="data-visita" required>
+                </div>
+            </div>
+            <hr>
+
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="instagram">Instagram</label>
+                    <label for="email">E-mail</label>
+                    <label for="site">Site</label>
+                </div>
+                <div class="em__linha">
+                    <input type="text" id="instagram" placeholder="ex: @nomedoperfil">
+                    <input type="email" id="email" placeholder="ex: ponto@turistico.com">
+                    <input type="url" id="site" placeholder="ex: www.pontoturistico.com">
+                </div>
+            </div>
+            
+            <div class="campos">
+                <label for="informacoes">Informações adicionais sobre o ponto turístico</label>
+            </div>
+            <div>
+                <textarea name="" id="informacoes" placeholder="ex: o local não possui elevador, leve guarda-chuva ou capa de chuva o local não é coberto"></textarea>
+            </div>
+
+            <div class="campos">
+                <label for="tickmarks">De 0 a 10 dê uma nota para a sua experiência neste local</label>
+            </div>
+            <div class="campos">
+                <input type="range" list="tickmarks">
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="10">
+                    <option value="20">
+                    <option value="30">
+                    <option value="40">
+                    <option value="50">
+                    <option value="60">
+                    <option value="70">
+                    <option value="80">
+                    <option value="90">
+                    <option value="100">
+                  </datalist>
+            </div>
+
+            <div class="campos">
+                <label for="experiencia">Conte-nos um pouco sobre como foi a sua experiência</label>
+            </div>
+            <div>
+                <textarea name="" id="experiencia" placeholder="ex: a vista panorâmica mais linda que já vi"></textarea>
+            </div>
+
+            <div class="botoes">
+                <input class="botao" type="submit" value="Enviar">
+                <input class="botao" type="reset" value="Limpar todos os campos">
+                <input class="botao" type="button" value="Gravar e continuar mais tarde">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
